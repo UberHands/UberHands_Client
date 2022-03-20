@@ -1,0 +1,80 @@
+.profile-container{
+	display: flex;
+	min-height: 50vh;
+	margin-bottom: 0.5em;
+}
+
+.left-pane{
+	width: 370px;
+	height: 100%;
+	background: #1b1b1b;
+	color: #fefefe;
+	padding: 1em 0em;
+}
+
+.profile-pic{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.profile-pic img{
+	margin: 1em 0;
+}
+
+.helper-name {
+	font-size: 3em;
+	font-weight: 400;
+}
+
+.helper-address {
+	font-size: 0.8em;
+	color: #eee;
+}
+
+.helper-info {
+	display: flex;	
+	justify-content: space-around;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.helper-values {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.helper-props {
+	font-weight: 300;
+	font-size: 0.9em;
+	color: #ddd;
+}
+
+.right-pane {
+	padding-left: 10em;
+}
+
+.values {
+	padding-left: 4em;
+	justify-content: ;
+}
+
+.profile-details h1{
+	font-size: 3em;
+	font-weight: 600;
+	color: #333;
+}
+
+.profile-details h3{
+	font-size: 1.4em;
+}
+
+.details-props {
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.helpercont{
+  transform-origin: center;
+  transform: scale(1);
+  animation: popup 1s ease-in-out;
+}
+
+.zeroscale{
+  transform: scale(0);
+}
+
+@keyframes popup {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
