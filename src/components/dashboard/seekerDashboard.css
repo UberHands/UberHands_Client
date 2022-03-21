@@ -1,0 +1,57 @@
+.progress-bar-container {
+	width: 100%;
+
+	margin: 4em 0;
+}
+
+.progress-bar {
+	display: flex;
+	position: relative;
+	justify-content: space-between;	
+	align-items: center;
+	margin: 0px 150px;
+	height: 1.15em;
+	background: #e5e5e5;
+	z-index: 1;
+}
+
+.progress-bar:before {
+	content: '';
+	position: absolute;
+	height: 1.15em;
+	background: #3e83d6;
+	z-index: -1;
+}
+
+.first-stage:before {
+	width: 33%;
+}
+
+.second-stage:before {
+	width: 66%;
+}
+
+.third-stage:before {
+	width: 100%;
+}
+
+.stage-level{
+	height: max-content;
+}
+
+.stage-circle {
+	margin-left: -3px;
+	margin-right: -3px;
+	height: 45px;
+	width: 45px;
+	background-color: #43962a;
+	border-radius: 50%;
+	border-width: 3px;
+	border-color: #3e83d6;
+}
+
+.stage-name {
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+}

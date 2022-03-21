@@ -25,7 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
   width: 8px;
   background-color: rgba(254, 254, 254, 0);
 }
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   width: 8px;
   border-radius: 0 0 4px 4px;
   background-color: rgba(13, 75, 191, 0.82);
-}
+}*/
 
 a{
   color: inherit;

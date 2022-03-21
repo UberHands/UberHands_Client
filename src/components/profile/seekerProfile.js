@@ -15,6 +15,7 @@ function toFloat(val) {
 
 function SeekerProfile() {
 
+  const [isFetched, setFetched] = useState(false);
   const [helper, setHelper] = useState({
     name : "Kamal",
     email : "kp@gmail.com",
@@ -26,6 +27,12 @@ function SeekerProfile() {
     address: 'Howrah, West Bengal',
     img : "https://avatars.githubusercontent.com/u/58756653?s=400&u=1c3e5e41bc245ec7550b6660da7a5eeb8e18e750&v=4"
   });
+
+  useEffect(() => {
+    if(isFetched == false) {
+      
+    }
+  }, [isFetched])
 
   return (
     <div className = "profile-container" >
