@@ -108,7 +108,7 @@ function App() {
                 <Button
                   className={'servbutton '+classes.btnRoot}
                   variant="contained"
-                  href="/helperdash"
+                  href="/helperdashboard"
                 >
                   Register as Helper
                 </Button>
