@@ -25,7 +25,7 @@ ReactDOM.render(
         <Header/>
         <Switch>
           <Route exact path='/' component = {App}/>
-          <Route exact path='/userdashboard' component = {SeekerDashboard}/>
+          <Route exact path='/seekerdashboard' component = {SeekerDashboard}/>
           <Route exact path='/userdashboard/search' component = {Helpsearch}/>
           <Route exact path='/helperdash' component = {Helpdash}/>
           <Route exact path='/seekerProfile' component = {SeekerProfile}/>
