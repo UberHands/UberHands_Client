@@ -10,10 +10,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import SeekerDashboard from './components/dashboard/seekerDashboard';
-<<<<<<< HEAD
-=======
 import HelperDashboard from './components/dashboard/helperDashboard';
->>>>>>> 5dc8d64993319a031d3af1d94cb984584499bae5
 import Helpsearch from './components/searchpage/helpsearch';
 import Helpdash from './components/helpdash/helpdash';
 import SeekerProfile from './components/profile/seekerProfile';
@@ -29,11 +26,8 @@ ReactDOM.render(
         <Header/>
         <Switch>
           <Route exact path='/' component = {App}/>
-<<<<<<< HEAD
           <Route exact path='/seekerdashboard' component = {SeekerDashboard}/>
-=======
           <Route exact path='/userdashboard' component = {SeekerDashboard}/>
->>>>>>> 5dc8d64993319a031d3af1d94cb984584499bae5
           <Route exact path='/userdashboard/search' component = {Helpsearch}/>
           <Route exact path='/helperdash' component = {Helpdash}/>
           <Route exact path='/helperdashboard' component = {HelperDashboard}/>

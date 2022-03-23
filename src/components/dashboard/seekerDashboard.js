@@ -5,7 +5,6 @@ import React, {
 
 import './seekerDashboard.css';
 
-<<<<<<< HEAD
 const JobForm = () => {
   return (
     <div>
@@ -22,11 +21,6 @@ function SeekerDashboard() {
   const [curStage, setCurStage] = useState(2);
   var [customName, setCustomName] = useState("Custom Job");
   var [isClicked, setIsClicked] = useState(0);
-=======
-function SeekerDashboard() {
-
-  const [curStage, setCurStage] = useState(2);
->>>>>>> 5dc8d64993319a031d3af1d94cb984584499bae5
 
   return (
     <div>
@@ -50,7 +44,6 @@ function SeekerDashboard() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
 
       <div className="jobs-outer-container">
         <div className="jobs-container">
@@ -79,9 +72,6 @@ function SeekerDashboard() {
       <div className="helpers-container">
 
       </div>
-
-=======
->>>>>>> 5dc8d64993319a031d3af1d94cb984584499bae5
     </div>
   );
 }
