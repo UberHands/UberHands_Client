@@ -11,6 +11,7 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import SeekerDashboard from './components/dashboard/seekerDashboard';
 import HelperDashboard from './components/dashboard/helperDashboard';
+import LoadPage from './components/dashboard/loadPage';
 import Helpsearch from './components/searchpage/helpsearch';
 import Helpdash from './components/helpdash/helpdash';
 import SeekerProfile from './components/profile/seekerProfile';
@@ -30,6 +31,7 @@ ReactDOM.render(
           <Route exact path='/userdashboard' component = {SeekerDashboard}/>
           <Route exact path='/userdashboard/search' component = {Helpsearch}/>
           <Route exact path='/helperdash' component = {Helpdash}/>
+          <Route exact path='/loadpage' component = {LoadPage}/>
           <Route exact path='/helperdashboard' component = {HelperDashboard}/>
           <Route exact path='/seekerProfile' component = {SeekerProfile}/>
           {/* <Route component={App} /> */}

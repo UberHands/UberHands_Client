@@ -35,7 +35,7 @@ export default function Header(){
               <a target="_blank" rel="noreferrer">Github</a>
             </span>
             <span><a href="mailto:sujalmodanwal9@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
-          
+
             <span> <Link to="/seekerProfile"> Profile </Link> </span>
 
           </div>
