@@ -14,7 +14,7 @@ function HelperDashboard() {
     if(isloading) {
       setTimeout(()=>{
         setLoading(false)
-      }, 3000);
+      }, 0);
     }
   }, [isloading])
 
@@ -22,9 +22,11 @@ function HelperDashboard() {
     <div>
       {isloading? <LoadPage/>:(
         <div>
-        <div className = "heading">
-          <h1>Jobs Available Near You</h1>
-        </div>
+          <div className = "heading">
+            <h1>Available Jobs Near You</h1>
+          </div>
+          <div className = "card">
+          </div>
         </div>
       )}
     </div>

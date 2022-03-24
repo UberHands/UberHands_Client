@@ -10,8 +10,21 @@
 
 h1 {
 	font-size: 1.7em;
-	font-weight: 700;
+	font-weight: 200;
 	text-align: left;
 	margin-left: 2em;
 	margin-top: 0.8em;
+}
+
+.jobs{
+	margin-top: 4em;
+}
+
+.card {
+	height: 4rem;
+	width: 3em;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	align-items: center;
+	padding: 4em;
+
 }
