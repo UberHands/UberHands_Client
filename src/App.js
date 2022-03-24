@@ -59,16 +59,16 @@ function App() {
     <div className="home">
       <div className="bannerContainer w-full mb-12">
         <Grid container className="flex flex-col items-center">
-          <div className="bannertextCont px-60 mb:px-20 py-36 mb:py-4 bg-gray-800 rounded-xl text-center">
-            <div className="text-7xl mb:text-5xl font-bold text-gray-100">
+          <div className="bannertextCont px-60 py-36 bg-gray-800 rounded-xl text-center">
+            <div className="home-quote font-bold text-gray-100">
               A <span className="text-yellow-400">helping hand</span> near you
             </div>
             <div className="appdesc text-center my-12 text-gray-200 text-xl flex flex-col items-center">
               <div>We are intent to create a community that conglomerates people from</div>
               <div>all niches of society under one sphere to sustain and succour.</div>
             </div>
-            <div className="servcont flex justify-between mb:flex-col">
-              <div className="descntain bg-gray-700 p-6 rounded-lg w-72 text-left mb-12">
+            <div className="servcont flex justify-between">
+              <div className="descntain bg-gray-700 p-6 rounded-lg text-left">
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Find the service you need
                 </h1>
@@ -77,7 +77,7 @@ function App() {
                   get your job done in a few simple clicks
                 </div>
               </div>
-              <div className="descntain bg-gray-700 p-6 rounded-lg w-72 text-left mb-12">
+              <div className="descntain bg-gray-700 p-6 rounded-lg text-left">
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Furnish your requirements
                 </h1>
@@ -85,7 +85,7 @@ function App() {
                   Select your requirements to help us find suitable helpers for you
                 </div>
               </div>
-              <div className="descntain bg-gray-700 p-6 rounded-lg w-72 text-left mb-12">
+              <div className="descntain bg-gray-700 p-6 rounded-lg text-left">
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Choose among our verified helpers
                 </h1>

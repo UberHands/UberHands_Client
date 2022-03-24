@@ -1,77 +1,78 @@
-import React, {
-  useState,
-  useEffect
-} from 'react';
+import React, {useState, useEffect} from 'react';
+import './seekerDashboard.scss';
 
-import './seekerDashboard.css';
+const FormContainer = ()=>{
+  const default_jobs = [{
+      "name": "Babysitter",
+      "img": "babysitter.png"
+    },{
+      "name": "Dog sitting",
+      "img": "dog.png"
+    },{
+      "name": "Driving",
+      "img": "driving.jpg"
+    },{
+      "name": "Gardening",
+      "img": "garden.jpg"
+    },{
+      "name": "Shop",
+      "img": "shop.jpg"
+    },{
+      "name": "Shopping",
+      "img": "shopping.jpg"
+    },{
+      "name": "Bag",
+      "img": "bag.jpg"
+    },{
+      "name": "User",
+      "img": "user.png"
+    }
+  ]
 
-const JobForm = () => {
   return (
-    <div>
-      Hey
+    <div className="job-create-container">
+      <div className="float-wrapper">
+        {default_jobs.map((job)=>{
+          return (
+            <div className="default-job">
+              <img src={'img/services/' + job.img}/>
+              <span>{job.name}</span>
+            </div>
+          )
+        })}
+      </div>
     </div>
-  );
+  )
 }
 
 function SeekerDashboard() {
-
-  const images = ["babysitter.png", "dog.png", "driving.jpg", "garden.jpg", "shop.jpg", "shopping.jpg", "bag.jpg", "user.png"];
-  const names = ["Babysitter", "Dog", "Driving", "Gardening", "Shop", "Shopping", "Bag", "User"];
-
-  const [curStage, setCurStage] = useState(2);
-  var [customName, setCustomName] = useState("Custom Job");
-  var [isClicked, setIsClicked] = useState(0);
+  const [prog, setProg] = useState(0);
+  const stages = [
+    "Create Task",
+    "Choose Helper",
+    "Task in progress",
+    "Completed"
+  ]
 
   return (
-    <div>
-      <div className="progress-bar-container">
-        <div className={"progress-bar " + (curStage == 1 ? "first-stage" : curStage == 2 ? "second-stage" : curStage == 3 ? "third-stage" : "")}>
-          <div className="stage-level">
-            <div className="stage-circle"></div>
-            <span className="stage-name">One</span>
-          </div>
-          <div className="stage-level">
-            <div className="stage-circle"></div>
-            <span className="stage-name">Two</span>
-          </div>
-          <div className="stage-level">
-            <div className="stage-circle"></div>
-            <span className="stage-name">Three</span>
-          </div>
-          <div className="stage-level">
-            <div className="stage-circle"></div>
-            <span className="stage-name">Complete</span>
-          </div>
+    <div className="seeker-dashboard">
+      <div className="progress-container">
+        <div className="prog-ribbon">
+          <div className="internal-ribbon" style={{
+            width: `${(prog/(stages.length-1))*100}%`
+          }}></div>
         </div>
+        {stages.map((st, i)=>{
+          return (
+            <div className="prog-box" key={i} data-prev={i<prog} data-curr={i==prog}>
+              <div className="prog-circle">{i}</div>
+              <span>{st}</span>
+            </div>
+          )
+        })}
       </div>
 
-      <div className="jobs-outer-container">
-        <div className="jobs-container">
-          {[...Array(8)].map((x, i) => {
-            return (
-              <div className="popular-job-container">
-                <img src={"./img/services/" + images[i]}/>
-                <span>{names[i]}</span>
-              </div>
-            )
-          })}
-          <div className="custom-job-container">
-            <img src={"./img/services/customJob.png"}/>
-            <span onClick={() => {
-              setCustomName(customName == "Custom No Job" ? "Custom Job" : "Custom No Job");
-              setIsClicked(!isClicked);
-            }}>{customName}
-            </span>
-          </div>
-        </div>
-
-        {isClicked ? <JobForm/> : null};
-
-      </div>
-
-      <div className="helpers-container">
-
-      </div>
+      {prog == 0 ? <FormContainer/>:null}
     </div>
   );
 }

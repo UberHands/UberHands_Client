@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Link } from "react-router-dom";
 import './index.css';
+import './short.css';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -41,5 +42,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-reportWebVitals();

@@ -23,6 +23,25 @@
 .home {
   width: 100%;
   max-width: 100vw;
-  /* height: calc(100vh - 80px); */
-  /* margin-bottom: 180px; */
+}
+
+.bannertextCont{
+  padding: 9em;
+}
+
+.home-quote{
+  font-size: 4.5rem;
+}
+
+.home-quote span{
+  color: #e8dd2a;
+}
+
+.descntain{
+  width: 18em;
+  margin: 0 0.4em;
+}
+
+.servcont{
+  margin-bottom: 3em;
 }
