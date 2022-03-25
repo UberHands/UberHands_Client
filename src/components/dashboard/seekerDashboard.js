@@ -15,31 +15,39 @@ const FormContainer = ()=>{
       "name": "Gardening",
       "img": "garden.jpg"
     },{
-      "name": "Shop",
+      "name": "Shop Pickup",
       "img": "shop.jpg"
     },{
       "name": "Shopping",
       "img": "shopping.jpg"
     },{
-      "name": "Bag",
-      "img": "bag.jpg"
+      "name": "Cooking",
+      "img": "cooking.jpg"
     },{
-      "name": "User",
-      "img": "user.png"
+      "name": "Shifting",
+      "img": "shifting.jpg"
     }
   ]
 
   return (
     <div className="job-create-container">
       <div className="float-wrapper">
-        {default_jobs.map((job)=>{
-          return (
-            <div className="default-job">
-              <img src={'img/services/' + job.img}/>
-              <span>{job.name}</span>
-            </div>
-          )
-        })}
+        <div className="jobs-float-card">
+          {default_jobs.map((job)=>{
+            return (
+              <div className="default-job">
+                <div className="job-pic" style={{
+                  backgroundImage: `url(${'img/services/' + job.img})`
+                }}></div>
+                <span>{job.name}</span>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="job-post-container">
+          <div className="post-button">CUSTOM TASK</div>
+        </div>
       </div>
     </div>
   )

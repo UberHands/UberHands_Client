@@ -1,5 +1,4 @@
-.seeker-dashboard {
-}
+.seeker-dashboard {}
 
 .progress-container {
 	margin: 1em 12em;
@@ -10,7 +9,7 @@
 	z-index: 0;
 }
 
-.prog-ribbon{
+.prog-ribbon {
 	position: absolute;
 	top: 0.6em;
 	left: 0;
@@ -20,7 +19,7 @@
 	z-index: -1;
 }
 
-.internal-ribbon{
+.internal-ribbon {
 	width: 0;
 	height: 100%;
 	background: #2bdd6f;
@@ -36,13 +35,13 @@
 	--color: #555050;
 	--txt: #585b5e;
 
-	&[data-prev="true"]{
+	&[data-prev="true"] {
 		--bg: #2bdd6f;
 		--color: #fefefe;
 		--txt: #0db34d;
 	}
 
-	&[data-curr="true"]{
+	&[data-curr="true"] {
 		--bg: #2589cf;
 		--color: #fefefe;
 		--txt: #2b8fdd;
@@ -66,35 +65,69 @@
 	}
 }
 
-.job-create-container{
+.job-create-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 2em;
 }
 
-.float-wrapper{
+.jobs-float-card {
 	// width: 40%;
 	padding: 1em;
-
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 }
 
-.default-job{
+.default-job {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0 2em;
+	cursor: pointer;
 
-	img{
-		width: 6em;
-		height: 6em;
+	.job-pic {
+		width: 10em;
+		height: 10em;
 		border-radius: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 2em 0 0.6em 0;
 	}
 
-	span{
-		font-size: 0.8em;
+	span {
+		font-size: 0.92em;
 		color: #444;
+	}
+}
+
+.job-post-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	box-sizing: border-box;
+	padding: 3em;
+
+	.post-button {
+		color: #fefefe;
+		padding: 0.6em 2em;
+		border-radius: 4em;
+		background: #444444;
+		box-shadow: 2px 2px 8px rgba(34, 34, 34, 0.25);
+		transition: transform 200ms ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.1);
+			background: rgb(68,68,68);
+			background: linear-gradient(135deg, #444 0%, #4e5069 100%);
+		}
+
+		&:active{
+			transform: scale(0.96);
+		}
 	}
 }
