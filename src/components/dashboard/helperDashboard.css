@@ -20,10 +20,10 @@
 }
 
 .card {
-	height: 16em;
-	width: 28em;
+	height: 15em;
+	width: 26em;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	margin: 2em 2em;
+	margin: 2em 0em;
 	display: flex;
 }
 
@@ -79,7 +79,11 @@
 }
 
 .rowdetails i{
-  margin-right: 4px;
+  margin: 0px 6px;
+}
+
+.rowdetails p{
+  text-align: right;
 }
 
 .col1 {
@@ -90,12 +94,20 @@
   background-color: #d1a4b6;
 }
 
+.col1 p{
+  font-size: 13px;
+}
+
 .col2 {
   width: 50%;
   float: left;
   display: flex;
   flex-wrap: wrap;
   background-color: #c9b1db;
+}
+
+.col2 p{
+  font-size: 13px;
 }
 
 .card button {

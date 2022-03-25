@@ -10,17 +10,33 @@ import LoadPage from './loadPage';
 function HelperDashboard() {
 
   const [isloading, setLoading] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [success, setSuccess] = React.useState(false);
+  const timer = React.useRef();
+
   useEffect(()=>{
     if(isloading) {
       setTimeout(()=>{
         setLoading(false)
-      }, 0);
+      }, 3000);
     }
   }, [isloading])
 
+  const handleClick = () => {
+    setOpen(true);
+    setSuccess(false);
+    setLoading(true);
+    timer.current = window.setTimeout(() => {
+      setSuccess(true);
+      setLoading(false);
+    }, 2000);
+  };
+
   return (
     <div>
-      {isloading? <LoadPage/>:(
+      {isloading? (
+        <div class="spinner"></div>
+      ):(
         <div>
           <div className = "heading">
             <h1>Available Jobs Near You</h1>
@@ -50,7 +66,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
             <div className = "card">
@@ -77,7 +93,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
             <div className = "card">
@@ -104,7 +120,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
             <div className = "card">
@@ -131,7 +147,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
             <div className = "card">
@@ -158,7 +174,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
             <div className = "card">
@@ -185,7 +201,7 @@ function HelperDashboard() {
                       </div>
                     </div>
                   </div>
-                    <button>Pick This Job!</button>
+                    <button onClick = {handleClick}>Pick This Job!</button>
               </div>
             </div>
           </div>
