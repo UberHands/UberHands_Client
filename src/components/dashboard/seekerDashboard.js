@@ -6,7 +6,6 @@ import {
   Button,
   FormControl,
   CircularProgress,
-  makeStyles,
   LinearProgress,
   Dialog,
   DialogContentText,
@@ -18,10 +17,10 @@ import {
   Switch,
   Link,
   FormHelperText
-} from '@material-ui/core';
+} from '@mui/material';
 
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import InputAdornment from '@material-ui/material/InputAdornment';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import InputAdornment from '@mui/material/InputAdornment';
 
 import './seekerDashboard.scss';
 
@@ -57,11 +56,6 @@ const JobPopup = (props)=>{
                 variant="standard"
                 value={data.seeker}
                 onChange={handleInput}
-                startAdornment={
-                  <InputAdornment position="start">
-                    <AccountCircle />
-                  </InputAdornment>
-                }
               />
             </Grid>
             <Grid item xs={12} sm={6}>

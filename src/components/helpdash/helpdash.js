@@ -9,67 +9,64 @@ import {
   Fab,
   Button,
   CircularProgress,
-  makeStyles,
   Dialog,
   DialogContentText,
   Link
-} from '@material-ui/core';
+} from '@mui/material';
 import './helpdash.css';
 
-import CheckIcon from '@material-ui/icons/Check';
-import AutorenewIcon from '@material-ui/icons/Autorenew';
+import CheckIcon from '@mui/icons-material/Check';
+import AutorenewIcon from '@mui/icons-material/Autorenew';
 
-import Autocomplete from '@material-ui/lab/Autocomplete';
-
-const useStyles = makeStyles(theme => ({
-  input: {
-    fontFamily: 'Poppins',
-    fontSize: '1em',
-    textTransform: 'none'
-  },
-  btnRoot: {
-    color: '#e6e6e6',
-    backgroundColor: '#11c14d',
-    fontFamily: 'Poppins',
-    padding: '1vh 2vw',
-    borderRadius: '48px',
-    fontSize: '1em',
-    textTransform: 'none'
-  },
-  btnRootOnline: {
-    color: '#e6e6e6',
-    backgroundColor: '#891ac7',
-    fontFamily: 'Poppins',
-    padding: '1vh 2vw',
-    borderRadius: '48px',
-    fontSize: '1em',
-    textTransform: 'none'
-  },
-  buttonSuccess: {
-    backgroundColor: '#14c33b',
-    '&:hover': {
-      backgroundColor: '#14c33b',
-    },
-  },
-  fabProgress: {
-    color: '#097d23',
-    position: 'absolute',
-    top: -6,
-    left: -6,
-    zIndex: 1,
-  },
-  buttonProgress: {
-    color: '#29f156',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    marginTop: -12,
-    marginLeft: -12,
-  },
-}));
+// const useStyles = makeStyles(theme => ({
+//   input: {
+//     fontFamily: 'Poppins',
+//     fontSize: '1em',
+//     textTransform: 'none'
+//   },
+//   btnRoot: {
+//     color: '#e6e6e6',
+//     backgroundColor: '#11c14d',
+//     fontFamily: 'Poppins',
+//     padding: '1vh 2vw',
+//     borderRadius: '48px',
+//     fontSize: '1em',
+//     textTransform: 'none'
+//   },
+//   btnRootOnline: {
+//     color: '#e6e6e6',
+//     backgroundColor: '#891ac7',
+//     fontFamily: 'Poppins',
+//     padding: '1vh 2vw',
+//     borderRadius: '48px',
+//     fontSize: '1em',
+//     textTransform: 'none'
+//   },
+//   buttonSuccess: {
+//     backgroundColor: '#14c33b',
+//     '&:hover': {
+//       backgroundColor: '#14c33b',
+//     },
+//   },
+//   fabProgress: {
+//     color: '#097d23',
+//     position: 'absolute',
+//     top: -6,
+//     left: -6,
+//     zIndex: 1,
+//   },
+//   buttonProgress: {
+//     color: '#29f156',
+//     position: 'absolute',
+//     top: '50%',
+//     left: '50%',
+//     marginTop: -12,
+//     marginLeft: -12,
+//   },
+// }));
 
 function Helpdash() {
-  const classes = useStyles();
+  const classes = {};
 
   const [jobs, setJobs] = useState([]);
   const [open, setOpen] = useState(false);

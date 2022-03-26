@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './header.css'
 
-import DehazeIcon from '@material-ui/icons/Dehaze';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import DehazeIcon from '@mui/icons-material/Dehaze';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 import {Link} from 'react-router-dom';
 

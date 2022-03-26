@@ -9,7 +9,6 @@ import {
   Button,
   FormControl,
   CircularProgress,
-  makeStyles,
   LinearProgress,
   Dialog,
   DialogContentText,
@@ -21,42 +20,40 @@ import {
   Switch,
   Link,
   FormHelperText
-} from '@material-ui/core';
+} from '@mui/material';
 import './dashboard.css';
 
-import Autocomplete from '@material-ui/lab/Autocomplete';
-
-const useStyles = makeStyles(theme => ({
-  input: {
-    fontFamily: 'Poppins',
-    fontSize: '1em',
-    textTransform: 'none'
-  },
-  btnRoot: {
-    color: '#e6e6e6 !important',
-    backgroundColor: '#245fd3',
-    fontFamily: 'Poppins',
-    padding: '2vh 3vw',
-    fontSize: '1em',
-    textTransform: 'none'
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    margin: 'auto',
-    width: 'fit-content',
-  },
-  formControl: {
-    marginTop: theme.spacing(2),
-    minWidth: 120,
-  },
-  formControlLabel: {
-    marginTop: theme.spacing(1),
-  },
-}));
+// const useStyles = makeStyles(theme => ({
+//   input: {
+//     fontFamily: 'Poppins',
+//     fontSize: '1em',
+//     textTransform: 'none'
+//   },
+//   btnRoot: {
+//     color: '#e6e6e6 !important',
+//     backgroundColor: '#245fd3',
+//     fontFamily: 'Poppins',
+//     padding: '2vh 3vw',
+//     fontSize: '1em',
+//     textTransform: 'none'
+//   },
+//   form: {
+//     display: 'flex',
+//     flexDirection: 'column',
+//     margin: 'auto',
+//     width: 'fit-content',
+//   },
+//   formControl: {
+//     marginTop: theme.spacing(2),
+//     minWidth: 120,
+//   },
+//   formControlLabel: {
+//     marginTop: theme.spacing(1),
+//   },
+// }));
 
 function Dashboard() {
-  const classes = useStyles();
+  const classes = {};
 
   const [jobs, setJobs] = useState([]);
   const [open, setOpen] = useState(false);
