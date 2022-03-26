@@ -26,7 +26,7 @@
 }
 
 .bannertextCont{
-  padding: 9em;
+  padding: 9em 15em;
 }
 
 .home-quote{
@@ -34,7 +34,7 @@
 }
 
 .home-quote span{
-  color: #e8dd2a;
+  color: #e8b22a;
 }
 
 .descntain{
@@ -44,4 +44,19 @@
 
 .servcont{
   margin-bottom: 3em;
+}
+
+.home-grid{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.btnRoot{
+  color: #fbfbfb !important;
+  background: #245fd3 !important;
+  font-family: 'Poppins' !important;
+  padding: 2vh 3vw !important;
+  font-size: 1em !important;
+  text-transform: none !important;
 }

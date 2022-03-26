@@ -5,7 +5,6 @@ import React, {
 
 import './App.css';
 
-import axios from 'axios';
 import {
   Container,
   Grid,
@@ -31,34 +30,16 @@ import Collapse from '@mui/material/Collapse';
 import Card from '@mui/material/Card';
 import IconButton from '@mui/material/IconButton';
 
-// const useStyles = makeStyles(theme => ({
-//   input: {
-//     fontFamily: 'Poppins',
-//     fontSize: '1em',
-//     textTransform: 'none'
-//   },
-//   btnRoot: {
-//     color: '#fbfbfb !important',
-//     backgroundColor: '#245fd3',
-//     fontFamily: 'Poppins',
-//     padding: '2vh 3vw',
-//     fontSize: '1em',
-//     textTransform: 'none'
-//   }
-// }))
-
 function App() {
-  const classes = {};
-
   const [card1, setCard1] = React.useState(1);
 
   return (
     <div className="home">
       <div className="bannerContainer w-full mb-12">
-        <Grid container className="flex flex-col items-center">
-          <div className="bannertextCont px-60 py-36 bg-gray-800 rounded-xl text-center">
+        <Grid container xs="12" className="home-grid">
+          <div className="bannertextCont bg-gray-800 rounded-xl text-center">
             <div className="home-quote font-bold text-gray-100">
-              A <span className="text-yellow-400">helping hand</span> near you
+              A <span>helping hand</span> near you
             </div>
             <div className="appdesc text-center my-12 text-gray-200 text-xl flex flex-col items-center">
               <div>We are intent to create a community that conglomerates people from</div>
@@ -69,7 +50,7 @@ function App() {
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Find the service you need
                 </h1>
-                <div className="stepdesc text-left text-gray-400">
+                <div className="stepdesc text-left text-gray-500">
                   Choose from our popular options or create a custom service to
                   get your job done in a few simple clicks
                 </div>
@@ -78,7 +59,7 @@ function App() {
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Furnish your requirements
                 </h1>
-                <div className="stepdesc text-left text-gray-400">
+                <div className="stepdesc text-left text-gray-500">
                   Select your requirements to help us find suitable helpers for you
                 </div>
               </div>
@@ -86,24 +67,24 @@ function App() {
                 <h1 className="font-semibold text-lg text-gray-200 mb-4">
                   Choose among our verified helpers
                 </h1>
-                <div className="stepdesc text-left text-gray-400">
+                <div className="stepdesc text-left text-gray-500">
                   Decide from a list of available helpers to assist you with your needs
                 </div>
               </div>
             </div>
             <Grid container className="mt-12">
-              <Grid item xs={12} sm={6} className="">
+              <Grid item xs={12} sm={6}>
                 <Button
-                  className={'servbutton '+classes.btnRoot}
+                  className={'servbutton btnRoot'}
                   variant="contained"
                   href="/seekerdashboard"
                 >
                   Register as Help Seeker
                 </Button>
               </Grid>
-              <Grid item xs={12} sm={6} className="">
+              <Grid item xs={12} sm={6}>
                 <Button
-                  className={'servbutton '+classes.btnRoot}
+                  className={'servbutton btnRoot'}
                   variant="contained"
                   href="/helperdashboard"
                 >

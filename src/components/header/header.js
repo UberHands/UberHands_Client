@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './header.css'
 
 import DehazeIcon from '@mui/icons-material/Dehaze';
@@ -10,13 +10,15 @@ import {Link} from 'react-router-dom';
 export default function Header(){
   const [dashtext, setDash] = useState("Login/SignUp");
 
-  if(window.location.pathname.substring(1)!=""){
-    if(window.location.pathname.includes('userdashboard') && dashtext!="User Dashboard"){
-      setDash("User Dashboard");
-    }else if (window.location.pathname.includes('helperdash') && dashtext!="Helper Dashboard") {
-      setDash("Helper Dashboard");
+  useEffect(()=>{
+    if(window.location.pathname.substring(1)!=""){
+      if(window.location.pathname.includes('seekerdashboard') && dashtext!="Seeker Dashboard"){
+        setDash("Seeker Dashboard");
+      }else if (window.location.pathname.includes('helperdash') && dashtext!="Helper Dashboard") {
+        setDash("Helper Dashboard");
+      }
     }
-  }
+  }, [dashtext])
 
   return (
     <div className="header">

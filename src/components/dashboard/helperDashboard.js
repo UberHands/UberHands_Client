@@ -2,25 +2,87 @@ import React, {
   useState,
   useEffect
 } from 'react';
+import useInterval from 'use-interval';
+
+import { Dialog } from '@mui/material';
+import TaskIcon from '@mui/icons-material/Task';
 
 import './helperDashboard.css';
 import './loadPage.css';
 import LoadPage from './loadPage';
 
 function HelperDashboard() {
-
   const [isloading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
-  const [success, setSuccess] = React.useState(false);
+  const [success, setSuccess] = useState(false);
+  const [hid, setHid] = useState(0)
   const timer = React.useRef();
+
+  const jobs = [
+    {
+      title: "Dog Sitting",
+      img: "img/dog.jpeg",
+      startsin: "20 minutes",
+      duration: "30 minutes",
+      price: "80",
+      dist: "3"
+    },{
+      title: "Gardening",
+      img: "img/Gardening.jpg",
+      startsin: "Tomm, 2pm",
+      duration: "60 minutes",
+      price: "150",
+      dist: "1"
+    },{
+      title: "Grocery Shopping",
+      img: "img/grocery.jpg",
+      startsin: "20 minutes",
+      duration: "60 minutes",
+      price: "120",
+      dist: "3"
+    },{
+      title: "Driving",
+      img: "img/driving.jpg",
+      startsin: "Thrus, 4pm",
+      duration: "2 days",
+      price: "1500",
+      dist: "0.5"
+    },{
+      title: "Cleaning House",
+      img: "img/cleaning.jpg",
+      startsin: "Today 5pm",
+      duration: "2 hours",
+      price: "100",
+      dist: "0.2"
+    },{
+      title: "Takecare of Shop",
+      img: "img/shop.jpg",
+      startsin: "40 minutes",
+      duration: "3 hours",
+      price: "300",
+      dist: "5"
+    }
+  ]
 
   useEffect(()=>{
     if(isloading) {
       setTimeout(()=>{
         setLoading(false)
-      }, 3000);
+      }, 2000);
     }
   }, [isloading])
+
+  useInterval(()=>{
+    var ele = document.querySelector(`.all-jobs-container > .profiles > div:nth-child(${hid+1})`)
+    if(!isloading){
+      if(ele){
+        ele.classList.toggle('zeroscale')
+        setHid(hid + 1)
+      }else{
+        setHid(-1)
+      }
+    }
+  }, hid > -1 ? 400: null)
 
   const handleClick = () => {
     setOpen(true);
@@ -33,179 +95,60 @@ function HelperDashboard() {
   };
 
   return (
-    <div>
+    <div className="all-jobs-container">
       {isloading? (
         <div class="spinner"></div>
       ):(
-        <div>
-          <div className = "heading">
+        <>
+          <div className="jobs-heading">
             <h1>Available Jobs Near You</h1>
           </div>
-          <div className = "profiles">
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/dog.jpeg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Dog Sitting</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p>20 minutes</p>
-                      </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>30 minutes</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>80</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>3 km</p>
-                      </div>
-                    </div>
+          <div className="profiles">
+            {!success && jobs.map((job, i)=>{
+              return (
+                <div className="card zeroscale">
+                  <div className="lcolumn">
+                    <img src={job.img}></img>
                   </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/Gardening.jpg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Gardening</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p> Tomm 2pm</p>
+                  <div className="rcolumn">
+                    <h1>{job.title}</h1>
+                      <div className="jobdetails">
+                        <div className="rowdetails">
+                          <div className="col1">
+                            <i className='far fa-calendar-alt'></i><p>{job.startsin}</p>
+                          </div>
+                          <div className="col2">
+                            <i className='fas fa-clock'></i><p>{job.duration}</p>
+                          </div>
+                        </div>
+                        <div className = "rowdetails">
+                          <div className = "col1">
+                            <i className='fa fa-rupee'></i><p>{job.price}</p>
+                          </div>
+                          <div className = "col2">
+                            <i className='fas fa-map-marker'></i><p>{job.dist} km</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>60 minutes</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>150</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>1 km</p>
-                      </div>
-                    </div>
+                      <button onClick = {handleClick}>PICK THIS JOB</button>
                   </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/grocery.jpg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Grocery Shopping</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p>20 minutes</p>
-                      </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>60 minutes</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>120</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>3 km</p>
-                      </div>
-                    </div>
+                </div>
+              )
+            })}
+            {success && (
+              <Dialog className=""
+                maxWidth="sm"
+                open={true}>
+                <div className="flex items-center p-8">
+                  <TaskIcon color="primary" fontSize="large"/>
+                  <div className="flex text-xl ml-4 text-green-800">
+                    You have been Assigned to this Job &nbsp; &nbsp;<a className="underline">🔗 Map</a>
                   </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/driving.jpg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Driving</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p>Thurs 4pm</p>
-                      </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>2 Days</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>1500</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>500 m</p>
-                      </div>
-                    </div>
-                  </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/cleaning.jpg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Cleaning House</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p>Today 5pm</p>
-                      </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>2 Hours</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>100</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>200 m</p>
-                      </div>
-                    </div>
-                  </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
-            <div className = "card">
-              <div className = "lcolumn">
-                  <img src = "img/shop.jpg"></img>
-              </div>
-              <div className = "rcolumn">
-                <h1>Takecare of Shop</h1>
-                  <div className = "jobdetails">
-                    <div className = "rowdetails">
-                      <div className="col1">
-                        <i className='far fa-calendar-alt'></i><p>40 minutes</p>
-                      </div>
-                      <div className="col2">
-                        <i className='fas fa-clock'></i><p>3 hours</p>
-                      </div>
-                    </div>
-                    <div className = "rowdetails">
-                      <div className = "col1">
-                        <i className='fa fa-rupee'></i><p>300</p>
-                      </div>
-                      <div className = "col2">
-                        <i className='fas fa-map-marker'></i><p>5 km</p>
-                      </div>
-                    </div>
-                  </div>
-                    <button onClick = {handleClick}>Pick This Job!</button>
-              </div>
-            </div>
+                </div>
+              </Dialog>
+            )}
           </div>
-        </div>
+        </>
       )}
     </div>
   );

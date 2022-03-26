@@ -1,0 +1,112 @@
+{
+  "helpers": [{
+      "name": "Amiyah Graham",
+      "bio": "If you catch me outside of work, I'm an adventurous traveler.",
+      "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    }, {
+      "name": "Sujal Modanwal",
+      "bio": "I can fix your printer and make your ears bleed with my voice.",
+      "img": "img/kankhhajura.jpg"
+    },
+    {
+      "name": "Rohan Gupta",
+      "bio": "An epitome of human intelligence and yet gracious at the same time.",
+      "img": "img/epitome.jpg"
+    },
+    {
+      "name": "Dave Mayer",
+      "bio": "I'm a creative film star who enjoys travelling",
+      "img": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Muhammad Hensley",
+      "bio": "Hensley is a considerate semi-professional sports person.",
+      "img": "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Daphne Preston",
+      "bio": "I'm a exciting part time local activist who enjoys meditation",
+      "img": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Elliott Oconnor",
+      "bio": "A kitchen assistant with a serious addiction to shopping.",
+      "img": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Yazmin Rubio",
+      "bio": "A sports science student who enjoys watching television, cycling.",
+      "img": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Miles Barajas",
+      "bio": "Miles is an entertaining health centre receptionist enjoys music.",
+      "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Erika Carlson",
+      "bio": "I'm a loveable professional sports person who enjoys photography",
+      "img": "https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Audrina Pennington",
+      "bio": "I'm a 36-year-old former admin assistant who enjoys social media.",
+      "img": "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Chase Melendez",
+      "bio": "Chase is a 28-year-old who likes swimming, cars and meditation.",
+      "img": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Leo Gay",
+      "bio": "I'm a 53-year-old senior programmer who enjoys jigsaw puzzles.",
+      "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Imani Zuniga",
+      "bio": "A stable tradesperson who loves playing card games.",
+      "img": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Shirley Joseph",
+      "bio": "Shirley, A energetic law student who enjoys meditation, cookery.",
+      "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Brian Schmidt",
+      "bio": "Brian is a semi-professional athelete who enjoys ferret racing.",
+      "img": "https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Leopold Lowe",
+      "bio": "A gym assistant who loves playing video games and painting",
+      "img": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Sybil Sutton",
+      "bio": "I'm a town counsellor who likes going to movies and camping.",
+      "img": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Jack Fox",
+      "bio": "Heidi is a hard-working woman who is addicted to running.",
+      "img": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+      "name": "Tom Fisher",
+      "bio": "A junior manager and background artist at television shows.",
+      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Ford Bishop",
+      "bio": "I'm a clerk who likes attending museums and praying.",
+      "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+      "name": "Ginger Noble",
+      "bio": "A health centre receptionist who enjoys checking news stories.",
+      "img": "https://images.unsplash.com/photo-1530785602389-07594beb8b73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    }
+  ]
+}
