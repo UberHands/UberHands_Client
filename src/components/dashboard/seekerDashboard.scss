@@ -95,7 +95,7 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		margin: 2em 0 0.6em 0;
+		margin: 2em 0 0.6em;
 	}
 
 	span {
@@ -126,8 +126,18 @@
 			background: linear-gradient(135deg, #444 0%, #4e5069 100%);
 		}
 
-		&:active{
+		&:active {
 			transform: scale(0.96);
 		}
 	}
+}
+
+.job-dialog {
+	.job-textfield {
+		padding-right: 3em;
+	}
+}
+
+.MuiFormLabel-root {
+	font-family: 'Poppins', sans-serif !important;
 }

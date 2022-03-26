@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
 
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,4 +60,8 @@ code {
 
 .App {
   min-height: 100vh;
+}
+
+.prtclk *{
+  pointer-events: none !important;
 }
