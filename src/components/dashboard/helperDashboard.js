@@ -41,6 +41,13 @@ function HelperDashboard() {
       price: "120",
       dist: "3"
     },{
+      title: "Party Preparation",
+      img: "img/party.jpg",
+      startsin: "2 hours",
+      duration: "3 hours",
+      price: "250",
+      dist: "0.8"
+    },{
       title: "Driving",
       img: "img/driving.jpg",
       startsin: "Thrus, 4pm",
@@ -61,14 +68,21 @@ function HelperDashboard() {
       duration: "3 hours",
       price: "300",
       dist: "5"
+    },{
+      title: "Tourist Guide",
+      img: "img/tourist.jpg",
+      startsin: "Evening 5pm",
+      duration: "4 Days",
+      price: "2000",
+      dist: "1.5"
     }
   ]
 
   useEffect(()=>{
-    if(isloading) {
+    if(isloading && !success) {
       setTimeout(()=>{
         setLoading(false)
-      }, 2000);
+      }, 1500);
     }
   }, [isloading])
 
@@ -86,12 +100,11 @@ function HelperDashboard() {
 
   const handleClick = () => {
     setOpen(true);
-    setSuccess(false);
+    setSuccess(true);
     setLoading(true);
     timer.current = window.setTimeout(() => {
-      setSuccess(true);
       setLoading(false);
-    }, 2000);
+    }, 5000);
   };
 
   return (

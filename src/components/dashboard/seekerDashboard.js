@@ -398,7 +398,7 @@ const AvailableHelpers = (props)=>{
 
   return (
     <div className="available-helpers">
-      <div className="text-2xl font-bold text-gray-800">Available Helper near you</div>
+      <div className="text-3xl text-gray-800">Available Helper near you</div>
       <div className="helpers-container">
         {allHelpers.map((helper, i)=>{
           return (
