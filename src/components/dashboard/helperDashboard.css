@@ -47,7 +47,7 @@
 }
 
 .jobdetails {
-  margin-top: 1em;
+  margin: 1em 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -68,16 +68,12 @@
     margin-top: 12px;
 }
 
-.jobdetails div {
-  display: block;
-}
-
 .rowdetails {
   display: flex;
   padding: 4px;
 }
 
-.rowdetails i{
+.rowdetails svg{
   margin: 0px 6px;
 }
 
@@ -85,16 +81,18 @@
   text-align: right;
 }
 
-.col1 {
+.col1, .col2{
   width: 50%;
+  height: 32px;
+  font-size: 13px;
   float: left;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   background-color: #d1a4b6;
 }
 
-.col1 p{
-  font-size: 13px;
+.col1 div{
+  height: 16px;
 }
 
 .col2 {

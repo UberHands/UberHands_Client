@@ -37,7 +37,7 @@ function App() {
     <div className="home">
       <div className="bannerContainer w-full mb-12">
         <Grid container xs="12" className="home-grid">
-          <div className="bannertextCont bg-gray-800 rounded-xl text-center">
+          <div className="bannertextCont rounded-xl text-center">
             <div className="home-quote font-bold text-gray-100">
               A <span>helping hand</span> near you
             </div>

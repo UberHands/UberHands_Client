@@ -6,6 +6,10 @@ import useInterval from 'use-interval';
 
 import { Dialog } from '@mui/material';
 import TaskIcon from '@mui/icons-material/Task';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 import './helperDashboard.css';
 import './loadPage.css';
@@ -50,7 +54,7 @@ function HelperDashboard() {
     },{
       title: "Driving",
       img: "img/driving.jpg",
-      startsin: "Thrus, 4pm",
+      startsin: "Thurs, 4pm",
       duration: "2 days",
       price: "1500",
       dist: "0.5"
@@ -71,7 +75,7 @@ function HelperDashboard() {
     },{
       title: "Tourist Guide",
       img: "img/tourist.jpg",
-      startsin: "Evening 5pm",
+      startsin: "Eve 5pm",
       duration: "4 Days",
       price: "2000",
       dist: "1.5"
@@ -128,18 +132,26 @@ function HelperDashboard() {
                       <div className="jobdetails">
                         <div className="rowdetails">
                           <div className="col1">
-                            <i className='far fa-calendar-alt'></i><p>{job.startsin}</p>
+                            <div>
+                              <CalendarMonthIcon style={{fontSize: 16}}/>
+                            </div>
+                            <div>{job.startsin}</div>
                           </div>
-                          <div className="col2">
-                            <i className='fas fa-clock'></i><p>{job.duration}</p>
+                          <div className="col1 col2">
+                            <div>
+                              <AccessTimeIcon style={{fontSize: 16}}/>
+                            </div>
+                            <div>{job.duration}</div>
                           </div>
                         </div>
                         <div className = "rowdetails">
                           <div className = "col1">
-                            <i className='fa fa-rupee'></i><p>{job.price}</p>
+                            <div><CurrencyRupeeIcon style={{fontSize: 16}}/></div>
+                            <div>{job.price}</div>
                           </div>
-                          <div className = "col2">
-                            <i className='fas fa-map-marker'></i><p>{job.dist} km</p>
+                          <div className = "col1 col2">
+                            <div><LocationOnIcon style={{fontSize: 16}}/></div>
+                            <div>{job.dist} km</div>
                           </div>
                         </div>
                       </div>

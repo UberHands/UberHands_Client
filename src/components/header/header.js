@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom';
 
 export default function Header(){
-  const [dashtext, setDash] = useState("Login/SignUp");
+  const [dashtext, setDash] = useState("");
 
   useEffect(()=>{
     if(window.location.pathname.substring(1)!=""){
@@ -34,11 +34,11 @@ export default function Header(){
               <Link to="/">{dashtext}</Link>
             </span>
             <span>
-              <a target="_blank" rel="noreferrer">Github</a>
+              <a href="https://github.com/UberHands/UberHands_Client" target="_blank" rel="noreferrer">Github</a>
             </span>
             <span><a href="mailto:sujalmodanwal9@gmail.com" target="_blank" rel="noreferrer">Contact</a></span>
 
-            <span> <Link to="/seekerProfile"> Profile </Link> </span>
+            <span> <Link to="/"> Profile </Link> </span>
 
           </div>
         </div>

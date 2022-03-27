@@ -17,7 +17,7 @@ export default function Footer(){
           Copyright © 2022. Uber Hands. All rights reserved
         </span>
         <div className="socialinks">
-          <a target="_blank">
+          <a href="https://github.com/UberHands/UberHands_Client" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="mailto:sujalmodanwal9@gmail.com" target="_blank">
