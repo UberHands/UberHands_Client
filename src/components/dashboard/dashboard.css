@@ -1,0 +1,15 @@
+.dash{
+  min-height: 100vh;
+}
+
+.servbutton{
+  outline: none !important;
+}
+
+.servbutton:hover span{
+  color: #28282a;
+}
+
+.pservcont::-webkit-scrollbar{
+  display: none;
+}
