@@ -14,7 +14,7 @@ export default function Footer(){
     <div className="footer">
       <div className="footCont">
         <span className="copyrightText">
-          Copyright © 2022. Uber Hands. All rights reserved
+          Copyright © 2022. Dolet. All rights reserved
         </span>
         <div className="socialinks">
           <a href="https://github.com/UberHands/UberHands_Client" target="_blank">

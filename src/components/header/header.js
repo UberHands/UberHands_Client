@@ -25,7 +25,7 @@ export default function Header(){
       <div className="headerContainer">
         <div className="logo">
           <span>
-            <Link to="/">Uber Hands</Link>
+            <Link to="/">Dolet</Link>
           </span>
         </div>
         <div className="headNav">

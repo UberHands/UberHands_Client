@@ -33,7 +33,7 @@
     <img src="img/logo.png" alt="Logo" width="260">
   </a>
 
-  <h3 align="center">Uber Hands</h3>
+  <h3 align="center">Dolet</h3>
 
   <p align="center">
      A helping hand near you
@@ -68,9 +68,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Uber Hands][product-screenshot]](https://example.com)
+[![Dolet][product-screenshot]](https://example.com)
 
-Uber Hands is a demo project created for Uber HackTag 2.0 . Uber wants to reach a billion customer and for that we need to simplify a common problem that is faced by billions of people in this country. Uber hands in its idea simplifies such situations for us where we need a helping hand to assist us or to fill in for us or to get a job done. It identifies "Help-Seeker" as people who require help/assistance to get their specific task done. It also idenifies "Help provider" who generally don't have some specific skill set or they have some time left in their day when they can work extra (on task-basis) to earn some money.
+Dolet is a demo project created for Uber HackTag 2.0 . Uber wants to reach a billion customer and for that we need to simplify a common problem that is faced by billions of people in this country. Dolet in its idea simplifies such situations for us where we need a helping hand to assist us or to fill in for us or to get a job done. It identifies "Help-Seeker" as people who require help/assistance to get their specific task done. It also idenifies "Help provider" who generally don't have some specific skill set or they have some time left in their day when they can work extra (on task-basis) to earn some money.
 
 Here's what Uber Hand aim to provide :
 * A fast and efficient on-demand employment providing platform
